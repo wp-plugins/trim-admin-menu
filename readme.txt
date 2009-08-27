@@ -3,7 +3,7 @@ Contributors: lantash
 Tags: admin, unclutter, zen, minimize, menu, reduce, hide, simple, easier, cms
 Requires at least: 2.8
 Tested up to: 2.8.4
-Stable tag: 4.3
+Stable tag: 1.1
 
 Hide menu items in the admin interface from non-admin users.
 
