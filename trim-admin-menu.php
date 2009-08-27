@@ -4,7 +4,7 @@
 	Plugin URI: 
 	Description: Hide menu items in the admin interface from non-admin users.
 	Version: 1.3
-	Author: Severin Heiniger <severinheiniger@gmail.com>
+	Author: Severin Heiniger
 	Author URI: http://claimid.com/severinheiniger
 	Text Domain: trim-admin-menu
 */

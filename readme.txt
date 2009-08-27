@@ -11,6 +11,9 @@ Hide menu items in the admin interface from non-admin users.
 Hide menu items in the admin interface from non-admin users. It's still possible
 for them to access the corresponding pages by entering the URL directly.
 
+This plug-in perfectly complements `Admin Trim Interface`, a plug-in capable of
+hiding other elements of the admin interface.
+
 == Installation ==
 
 Install `Trim Admin Menu` directly from the plug-in section in your Wordpress
@@ -25,7 +28,7 @@ to specify what page non-admin users should be redirected to when logging in.
 
 == Screenshots ==
 
-1. Both the Links and Comments sections have been marked to be hidden.
+1. Both the Links and Comments section are hidden from non-admin users.
    Please note that the administrator doesn't see the changes.
 
 == Changelog ==
