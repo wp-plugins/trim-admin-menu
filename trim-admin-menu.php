@@ -30,7 +30,7 @@
 if (!class_exists('TrimAdminMenuPlugin')):
 
 class TrimAdminMenuPlugin {
-	var $name = 'Trim Admin Menu';
+	var $name = '';
 	var $basename = '';
 	var $domain = 'trim-admin-menu';
 	var $nonce_field = 'explain_nonce_admin_trim_menu';
@@ -46,7 +46,7 @@ class TrimAdminMenuPlugin {
 		if (!is_admin())
 			return;
 		
-		$this->name = __($this->name, $this->domain);
+		$this->name = __('Trim Admin Menu', $this->domain);
 		$this->basename = plugin_basename(__FILE__);
 		
 		register_activation_hook(__FILE__, array(&$this, 'install'));
