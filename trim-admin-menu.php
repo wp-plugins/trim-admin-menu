@@ -6,6 +6,7 @@
 	Version: 1.0
 	Author: Severin Heiniger <severinheiniger@gmail.com>
 	Author URI: http://claimid.com/severinheiniger
+	Text Domain: trim-admin-menu
 */
 
 /*
