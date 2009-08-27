@@ -217,8 +217,9 @@ END;
 			else
 				$checked = '';
 			
-			echo "<li><input name='$target_hash' type='checkbox' " .
-				"id='$target_hash' value='1' $checked/><strong>$label</strong>";
+			echo "<li><input name='$target_hash' type='checkbox' value='1' " .
+				"id='$target_hash' class='menu-item' $checked/>" .
+				"<strong>$label</strong>";
 			
 			if (!empty($this->default_submenu[$item[2]])) {
 				echo '<ul>';
@@ -238,9 +239,10 @@ END;
 					else
 						$subchecked = '';
 					
-					echo "<li><input name='$subtarget_hash' type='checkbox' " .
-						"id='$subtarget_hash' value='1' $subchecked />" .
-						"$sublabel</li>";
+					echo "<li>" .
+						"<input name='$subtarget_hash' type='checkbox' " .
+						"id='$subtarget_hash' value='1' class='$target_hash' " .
+						" $subchecked/>$sublabel</li>";
 				}
 				
 				echo '</ul>';
@@ -274,6 +276,26 @@ END;
 				display: none;
 			}
 		</style>
+		<script type="text/javascript">
+		// Apply a visibility change of a main menu item to all of its submenu
+		// items. Also make a main menu item visible again if one of its submenu
+		// items was made visible.
+		jQuery(document).ready(function($) {
+			$('.menu-item').each(function () {
+				var menu_item = $(this);
+				var submenu_items = $('.' + menu_item.attr('id'));
+				
+				menu_item.change(function() {
+					$(submenu_items).attr('checked', menu_item.attr('checked'));
+				});
+				
+				submenu_items.change(function() {
+					if ($(this).attr('checked'))
+						menu_item.attr('checked', 'checked');
+				});
+			});
+		});
+		</script>
 END;
 	}
 }
