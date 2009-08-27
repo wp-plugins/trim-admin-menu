@@ -8,6 +8,8 @@ Stable tag: 4.3
 Hide menu items in the admin interface from non-admin users.
 
 == Description ==
+Hide menu items in the admin interface from non-admin users. It's still possible
+for them to access the corresponding pages by entering the URL directly.
 
 == Installation ==
 
@@ -16,9 +18,20 @@ admin environment.
 
 == Frequently Asked Questions ==
 
+= Why isn't it possible to hide the Dashboard? =
+
+A future version of this plug-in might support it. It would be necessary
+to specify what page non-admin users should be redirected to when logging in.
+
 == Screenshots ==
 
 == Changelog ==
+
+= 1.1 =
+* Make use of JQuery to deactivate the checkboxes of all submenu items if the
+  corresponding main menu item is hidden.
+* German translation added.
+* First FAQ added.
 
 = 1.0 =
 * Initial version.
