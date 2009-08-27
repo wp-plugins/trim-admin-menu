@@ -30,7 +30,7 @@
 if (!class_exists('TrimAdminMenuPlugin')):
 
 class TrimAdminMenuPlugin {
-	var $name = ;
+	var $name = '';
 	var $basename = '';
 	var $domain = 'trim-admin-menu';
 	var $nonce_field = 'explain_nonce_admin_trim_menu';
