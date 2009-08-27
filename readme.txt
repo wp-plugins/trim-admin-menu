@@ -3,7 +3,7 @@ Contributors: lantash
 Tags: admin, unclutter, zen, minimize, menu, reduce, hide, simple, easier, cms
 Requires at least: 2.8
 Tested up to: 2.8.4
-Stable tag: 1.2
+Stable tag: 1.3
 
 Hide menu items in the admin interface from non-admin users.
 
@@ -29,6 +29,11 @@ to specify what page non-admin users should be redirected to when logging in.
    Please note that the administrator doesn't see the changes.
 
 == Changelog ==
+
+= 1.3 =
+* The logic that automatically activates/deactivates related checkboxes has been
+  fixed. If a main menu item is hidden and the user decides to unhide a submenu
+  item, also unhide the main menu item.
 
 = 1.2 =
 * Screenshot added.

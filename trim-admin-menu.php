@@ -3,7 +3,7 @@
 	Plugin Name: Trim Admin Menu
 	Plugin URI: 
 	Description: Hide menu items in the admin interface from non-admin users.
-	Version: 1.2
+	Version: 1.3
 	Author: Severin Heiniger <severinheiniger@gmail.com>
 	Author URI: http://claimid.com/severinheiniger
 	Text Domain: trim-admin-menu
@@ -290,8 +290,8 @@ END;
 				});
 				
 				submenu_items.change(function() {
-					if ($(this).attr('checked'))
-						menu_item.attr('checked', 'checked');
+					if (!$(this).attr('checked'))
+						menu_item.attr('checked', '');
 				});
 			});
 		});
