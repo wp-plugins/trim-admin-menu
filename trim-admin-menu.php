@@ -61,8 +61,7 @@ class TrimAdminMenuPlugin {
 	}
 	
 	function explain_nonce($msg) {
-		return __('Unable to perform action: Your WordPress session has ' .
-			'expired.  Please login and try again.');
+		return __('Unable to perform action: Your WordPress session has expired. Please login and try again.');
 	}
 	
 	function text_domain() {
@@ -185,8 +184,8 @@ class TrimAdminMenuPlugin {
 	function options_page() {
 		$options = $this->get_options();
 		$action_url = $_SERVER[PHP_SELF] . '?page=' . $this->basename;
-		$help = __('Select the menu items that should be hidden from ' .
-			'non-administrator users.', $this->domain);
+		$help = __('Select the menu items that should be hidden from non-administrator users.',
+		    $this->domain);
 		
 		if ($this->options_saved)
 			echo "<div id='message' class='updated fade'><p><strong>" . 
