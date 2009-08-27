@@ -3,7 +3,7 @@ Contributors: lantash
 Tags: admin, unclutter, zen, minimize, menu, reduce, hide, simple, easier, cms
 Requires at least: 2.8
 Tested up to: 2.8.4
-Stable tag: 1.3
+Stable tag: 1.4
 
 Hide menu items in the admin interface from non-admin users.
 
@@ -13,6 +13,8 @@ for them to access the corresponding pages by entering the URL directly.
 
 This plug-in perfectly complements `Admin Trim Interface`, a plug-in capable of
 hiding other elements of the admin interface.
+
+Please note that the administrator isn't affected by the changes.
 
 == Installation ==
 
@@ -29,9 +31,11 @@ to specify what page non-admin users should be redirected to when logging in.
 == Screenshots ==
 
 1. Both the Links and Comments section are hidden from non-admin users.
-   Please note that the administrator doesn't see the changes.
 
 == Changelog ==
+
+= 1.4 =
+* Some updates in readme.txt.
 
 = 1.3 =
 * The logic that automatically activates/deactivates related checkboxes has been
